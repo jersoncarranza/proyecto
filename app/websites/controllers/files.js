@@ -68,12 +68,15 @@ var Files = function  (conf) {
 	};*/
 	/*====================== Actualizar ===========*/
 	Files.prototype.post_update = function(req,res) {
-		var id = req.params.id;
+		/*var id = req.params.id;*/
 		var files = req.body;	
+		var id = req.body.id;	
+		var pk = req.body._id;	
+		console.log(pk);
 		this.model.update(id,files, function(doc){
-			
+			console.log(doc);
 			res.redirect('/files/see/'+ doc.id)//reenvia ha otra pagina 
-			});
+		});
 	};
 
 	Files.prototype.get_actualizar = function(req, res, next) {
