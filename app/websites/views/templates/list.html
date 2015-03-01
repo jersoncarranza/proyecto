@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>listar</title>
+</head>
+<body>
+	<h1>it isn't list</h1>
+	{{object.content}}
+
+
+	<ul>{% for author in object %}
+		  <li{% if loop.first %} class="first"{% endif %}>
+		    {{ author.content }}
+		    {{ author.title }}
+		    {{ author.slug }}
+		  </li>
+		{% endfor %}
+	</ul>
+</body>
+</html>

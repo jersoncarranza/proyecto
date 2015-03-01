@@ -1,0 +1,53 @@
+commit 29fddc08a6e569cbe9a2802494ae0c831bb9bedf
+Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
+Date:   Sun Mar 1 15:38:47 2015 -0500
+
+    MEtodos funcional
+
+commit fc47e18947b9ef683628957c49499db3b75d1710
+Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
+Date:   Sat Feb 28 19:49:22 2015 -0500
+
+    nuevo mas metodos
+
+commit 3ec25406709d7b8c659b429bb8374356e9883479
+Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
+Date:   Sat Feb 28 19:42:36 2015 -0500
+
+    Con metodos eliminar
+
+commit 27021bc485fc3da2767cfbfb3a069fa966af3992
+Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
+Date:   Sat Feb 28 19:41:43 2015 -0500
+
+    Con metodos eliminar
+
+commit c999ba0082c9e692bdc5c1f53196cb96fca39c4a
+Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
+Date:   Fri Feb 27 18:25:06 2015 -0500
+
+    Con sockets
+
+commit dd65bf099e992f147abf1776ae2f6c92c03e7829
+Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
+Date:   Fri Feb 27 17:51:46 2015 -0500
+
+    Github
+
+commit 218c44f54adbee980db46ead33319208d5a2c18b
+Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
+Date:   Fri Feb 27 17:41:19 2015 -0500
+
+    Archios Bases en github
+
+commit 55fb90515f80900c1b792c5018dee79fcaebcc11
+Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
+Date:   Thu Feb 26 01:25:41 2015 -0500
+
+    2 Funciona el guardar
+
+commit d2484bd18a90343fe9774d6b1aa5f175dd08582c
+Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
+Date:   Thu Feb 26 00:11:44 2015 -0500
+
+    1 Archivos bases
