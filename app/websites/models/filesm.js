@@ -55,7 +55,12 @@ archivos.prototype.update = function(id,data,callback) {
 		{
 			title:data.title,
 			slug:data.slug,
-			content:data.content
+			subject: data.subject,//materia
+			teacher:data.teacher,  //teacher
+			student:data.student ,//student
+			content:data.content,//contenido
+			url: data.url //url
+
 		},
 		function(err,data){
 			if(err) throw err;
