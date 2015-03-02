@@ -2,6 +2,7 @@ var mongoose = require('mongoose'),
 	Schema	 = mongoose.Schema;
 
 var FileSchema = new Schema({
+	versionKey: false ,
 	title: {type:String, require:true},
 	slug: {type:String, require:true},
 	content: String
