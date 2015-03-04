@@ -57,15 +57,24 @@ var Files = function  (conf) {
 			self.view.see(res, object);
 		})
 	};
-	//url del metodo see y lama el metodo ver para observar un elemento
-	/*Files.prototype.get_see_data = function(req, res, next) {
+	//llama metodo encontrar las materia por nivel
+	Files.prototype.get_seeLevel_level = function(req, res, next) {
 		var object = {};
 		var self = this;
-		this.model.findAt({slug:req.params.data},function(doc){
+		this.model.findLevel({level:req.params.data} ,function(doc){
 			object = doc;// [0] retorna solo un objeto
-			self.view.see(res, object);
+			self.view.seeLevel(res, object);
 		});
-	};*/
+	};
+	//materia
+	Files.prototype.get_seeSubject_codSub = function(req, res, next) {
+		var object = {};
+		var self = this;
+		this.model.findLevel({subjectCode:req.params.data} ,function(doc){
+			object = doc;// [0] retorna solo un objeto
+			self.view.seeSubject(res, object);
+		});
+	};
 	/*====================== Actualizar ===========*/
 	Files.prototype.post_update = function(req,res) {
 		/*var id = req.params.id;*/

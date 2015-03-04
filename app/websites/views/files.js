@@ -17,5 +17,7 @@ var Files = function  (conf) {
 
 
 	Files.prototype.actualizar = function(res, object) {res.render('update');}
+	Files.prototype.seeLevel = function(res, object) {res.send(object);}
+	Files.prototype.seeSubject = function(res, object) {res.send(object);}
 
 module.exports = Files; 

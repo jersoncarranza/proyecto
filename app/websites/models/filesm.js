@@ -27,8 +27,8 @@ archivos.prototype.findAll = function(callback) {
 	})
 };
 //obetener los datos de un archivo por un atributo
-archivos.prototype.findAt = function(query,callback) {
-	this.model.find(query).exec(function(err, doc){
+archivos.prototype.findLevel = function(level, callback) {
+	this.model.find(level).exec(function(err, doc){
 		callback(doc)
 	})
 };

@@ -5,6 +5,7 @@ var FileSchema = new Schema({
 	title: {type:String, require:true},//titulo
 	slug: {type:String, require:true},//slug
 	subject: {type:String, require:true},//materia
+	subjectCode: {type:String, require:true},//codigo de la materia
 	teacher: {type:String, require:true},//teacher
 	student: {type:String, require:true},//estudiante
 	content: String,//contenido
