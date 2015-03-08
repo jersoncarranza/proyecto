@@ -20,21 +20,29 @@ archivos.prototype.save = function(data,callback) {
 //========================obtener todos==================================
 archivos.prototype.findAll = function(callback) {
 	this.model
-	.find({})
+	.find(
+		{},
+		{ _id: 1, title: 1})
 	.exec(function(err, data){
 			if(err) throw err;
 			callback(data);
 	})
 };
 //obetener los datos de un archivo por un atributo
-archivos.prototype.findLevel = function(level, callback) {
-	this.model.find(level).exec(function(err, doc){
+archivos.prototype.findLevel = function(leveln, callback) {
+	this.model.find(
+		{level:leveln},
+		{_id: 0, title: 1, subject:1, content:1, student:1, teacher:1, url:1, level:1})
+		.exec(function(err, doc){
 		callback(doc)
 	})
 };
 
 archivos.prototype.findId = function(id, callback) {
-	this.model.findOne({_id:id}).exec(function(err, doc){
+	this.model.findOne(
+		{_id:id},
+		{_id: 0, title: 1, subject:1, content:1, student:1, teacher:1, url:1})
+		.exec(function(err, doc){
 			if(err) throw err;
 			callback(doc);
 		})

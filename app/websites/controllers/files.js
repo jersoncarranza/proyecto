@@ -41,14 +41,14 @@ var Files = function  (conf) {
 	Files.prototype.get_list = function(req, res, next) {
 		var object = {};
 		var self = this;
-		this.model.findAll(function(doc){
+		this.model.findAll(function(doc){ 
 			object = doc;
 			self.view.list(res, object);
 		});
 		
 	};
 	//url para listar todos los elementos SLUG o un campo
-	Files.prototype.get_see_find = function(req, res, next) {
+	Files.prototype.get_see_id  = function(req, res, next) {
 		var object = {};
 		var self = this;
 		var id = req.params.data;
@@ -61,7 +61,9 @@ var Files = function  (conf) {
 	Files.prototype.get_seeLevel_level = function(req, res, next) {
 		var object = {};
 		var self = this;
-		this.model.findLevel({level:req.params.data} ,function(doc){
+		var level = req.params.data;
+		console.log(level);
+		this.model.findLevel(level ,function(doc){
 			object = doc;// [0] retorna solo un objeto
 			self.view.seeLevel(res, object);
 		});
