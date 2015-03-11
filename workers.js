@@ -1,6 +1,6 @@
 var http	= require('http');
 var conf = require('./conf.json');
-var expressServer = require('./app/ExpressServer.js');
+var expressServer = require('./app/ExpressServergit commit.js');
 var mongoose = require('mongoose');
 var socketIO= require('./app/socketIO.js');
  
@@ -18,6 +18,7 @@ var Io = new socketIO({server:server});
 server.listen(conf.port);
 console.log('escuchando el puerto 7000');
 }
+virginia 23 diciembre
 
 //para poder debuggearlos
 if (module.parent){//es para llamarlo al padre 
