@@ -1,7 +1,9 @@
 {
 	"port":7000,
 	"db":{
-		"host":"troup.mongohq.com",
-		"name":"nodejitsu"
+		"host":"@troup.mongohq.com:10073",
+		"name":"nodejitsudb3726992572",
+		"user":"nodejitsu",
+		"password":"3af9571979d1c5269b1208be54bfa38f"
 	}
 }
