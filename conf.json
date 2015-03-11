@@ -1,7 +1,7 @@
 {
 	"port":7000,
 	"db":{
-		"host":"localhost",
-		"name":"mouse"
+		"host":"troup.mongohq.com",
+		"name":"nodejitsu"
 	}
 }
