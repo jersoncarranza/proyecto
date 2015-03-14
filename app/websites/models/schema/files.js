@@ -4,12 +4,12 @@ var mongoose = require('mongoose'),
 var FileSchema = new Schema({
 	title: {type:String, require:true},//titulo
 	student: {type:String, require:true},//estudiante
-	level: {type:String, require:true}, //nivel
 	content: {type:String,require:true},//contenido
 	subject: [{
-		name:String,
+		name:String,//nombre materia
 		teacher:String,//teacher
-		code:String //codigo de la materia
+		code:String, //codigo de la materia
+		level: {type:String, require:true} //nivel
 		}],
 	url: [{
 		url1:String,
