@@ -1,12 +1,87 @@
-<form action="/files/save/" method="post">
-		titulo: <input type="text" name="title"> <br>
-		slug: <input type="text" name="slug"> <br>
-		Materia: <input type="text" name="subject"> <br>
-		Codigo de la materia: <input type="text" name="subjectCode"> <br>
-		Profesor: <input type="text" name="teacher"> <br>
-		Estudiante: <input type="text" name="student"> <br>
-		Contenido: <input type="text" name="content"><br>
-		url: <input type="text" name="url"><br>
-		Semestre: <input type="text" name="level"><br>
-		<input type="submit" value="guardar">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Add</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<style>
+		.container{
+			margin:0px;
+			padding:0px; 
+			background:#B4F5FC;
+			width: 60%;
+			border-radius: 1em; 
+			text-align: center;
+		}
+		.list-group{
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+		}
+		.divider{
+			text-align: center;
+			background-color: black;
+ 			height: 3px;
+  			width: 80%;
+  			margin-bottom: 1em;
+  			margin-top: 1em;
+  			margin-left: 10%;
+  			margin-right: 10%;
+		}
+		input{
+			border-radius: 5px;
+		}
+		.group{
+			margin:0px;
+			padding:0px; 
+			background:#CCCCFF;
+			width: 60%;
+			border-radius: 1em; 
+			text-align: center;
+			margin-left: 20%;
+  			margin-right: 20%;
+		}
+	</style>
+
+</head>
+<body>
+	
+<div class="container">
+	<form action="/files/save/" method="post">
+			<ul class="list-group">
+				
+				<ul class="list-group group">
+					<li><h3>Title:<input type="text" name="title" placeholder="Tarea de NombreMateria"></h3></li>
+					<li><h3>Student:<input type="text" name="student" placeholder="Anonymous"></h3></li>
+					<li><h3>Level:<input type="text" name="level" placeholder="1"></h3></li>
+					<li><h3>Content</h3> <textarea type="text" name="content" placeholder="Esta tarea contiene ejercicios hechos en clases del capitulo 1, 2 3"></textarea></li>
+				</ul>
+				<li class="divider"></li>
+				
+				<ul class="list-group group"><h2>Subject</h2>
+					<li><h3>Name:<input type="text" name="subject.name" placeholder="Base de Conocimiento"></h3></li>	
+					<li><h3>Teacher:<input type="text" name="subject.teacher" placeholder="Teacher"></h3></li>	
+					<li><h3>Code:<input type="text" name="subject.code" placeholder="Subjetc Code: EIS1234"></h3></li>
+				</ul>
+				<li class="divider"></h3></li>
+				
+				<ul class="list-group group">
+					<li><h3>Partial1<input type="text" name="url.url1" placeholder="www.mega.co/redejemplo1"></h3></li>
+					<li><h3>Description Partial1:</h3><textarea type="text" name="url.description" placeholder="Se encuentran los archivos del 1er parcial donde contiene .."></textarea></li>
+
+					<li><h3>Partial2<input type="text" name="url.url1" placeholder="www.mega.co/redejemplo2"></h3></li>
+					<li><h3>Description Partial2:</h3><textarea type="text" name="url.description" placeholder="Se encuentran los archivos del 2er parcial donde contiene .."></textarea></li>
+					
+					<li><h3>Partial<input type="text" name="url.url1" placeholder="www.mega.co/redejemplo1" ></h3></li>
+					<li><h3>Description Partial3:</h3><textarea type="text" name="url.description" placeholder="Se encuentran los archivos del 3er parcial donde contiene .."></textarea></li>
+				</ul>
+				<li class="divider"></h3></li>
+				
+
+			<input type="submit" value="guardar">
+			</ul>
+	</form>
+</div>
+
+</body>
+</html>

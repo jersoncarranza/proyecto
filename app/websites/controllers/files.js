@@ -19,8 +19,7 @@ var Files = function  (conf) {
 	};
 	//url 
 	Files.prototype.get_add = function(req, res, next) {
-		var object = {nombre:'listar'};
-		this.view.add(res, object);
+		this.view.add(res);
 	};
 	/*=====================  ELIMINAR  ===========================*/
 	//llama el metodo
