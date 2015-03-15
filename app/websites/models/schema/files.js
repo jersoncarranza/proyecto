@@ -2,19 +2,32 @@ var mongoose = require('mongoose'),
 	Schema	 = mongoose.Schema;
 
 var FileSchema = new Schema({
-	title: {type:String, require:true},//titulo
-	student: {type:String, require:true},//estudiante
-	content: {type:String,require:true},//contenido
-	subject: [{
-		name:String,//nombre materia
-		teacher:String,//teacher
-		code:String, //codigo de la materia
-		level: {type:String, require:true} //nivel
+	subject: {type:String, require:true},//nombre materia
+	description: {type:String, require:true},//descripcion
+	teacher:{type:String, require:true},//profesor
+	level:  {type:String,require:true},//nivel
+	code:   {type:String,require:true},//codigo
+	homework: [{
+		partial_n:String,
+		homework_n:[{
+			description:String,
+			options_n:[{
+				student:String,
+				url:String
+			}],
 		}],
-	url: [{
-		url1:String,
+	}],
+	exam:[{
+		partial_n:String,
 		description:String		
-		}], //url
+		}],
+	materia:[{
+		partial_n:String,
+		materia_n:[{
+			description:String,
+			url:String
+		}],
+	}]
 });
 
 FileSchema.set('toJSON',{
