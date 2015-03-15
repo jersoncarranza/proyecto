@@ -8,7 +8,8 @@ var socketIO= require('./app/socketIO.js');
 var Workers = function (config) {
 config = config || {}
 
-mongoose.connect('mongodb://' +conf.db.user +':'+ conf.db.password + conf.db.host +'/'+ conf.db.name);
+mongoose.connect('mongodb://localhost/naruto');
+//mongoose.connect('mongodb://' +conf.db.user +':'+ conf.db.password + conf.db.host +'/'+ conf.db.name);
 //mongodb://nodejitsu:3af9571979d1c5269b1208be54bfa38f@troup.mongohq.com:10073/nodejitsudb3726992572
 var app = new expressServer();
 
