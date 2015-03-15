@@ -31,7 +31,10 @@ archivos.prototype.findAll = function(callback) {
 archivos.prototype.findLevel = function(leveln, callback) {
 	this.model.find(
 		{level:leveln},
-		{_id: 0, subject:1, description:1, teacher:1})
+		{_id: 0, subject:1, description:1, teacher:1, level:1,
+		 "homework.partial_n":1 , "homework.homework_n.description":1, "homework.homework_n.url":1,
+		 "exam.partial_n":1, "exam.description":1, "exam.url":1,
+		 "materia.partial_n":1, "materia.materia_n.description":1, "materia.materia_n.url":1})
 		.exec(function(err, doc){
 		callback(doc)
 	})
@@ -62,12 +65,10 @@ archivos.prototype.delete_id = function(id, callback) {
 archivos.prototype.update = function(id,data,callback) {
 	this.model.findOneAndUpdate(
 		{_id:id},
-		{
-			subject:data.subject,
-			teacher:data.teacher,  //teacher
-			level:data.level ,//student
-			description:data.description//contenido
-
+		{_id: 0, subject:1, description:1, teacher:1, level:1,
+		 "homework.partial_n":1 , "homework.homework_n.description":1, "homework.homework_n.url":1,
+		 "exam.partial_n":1, "exam.description":1, "exam.url":1,
+		 "materia.partial_n":1, "materia.materia_n.description":1, "materia.materia_n.url":1
 		},
 		function(err,data){
 			if(err) throw err;
