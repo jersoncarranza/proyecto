@@ -1,53 +1,71 @@
-commit 29fddc08a6e569cbe9a2802494ae0c831bb9bedf
+commit 25293758854fe3f436e51b5d30f054d5458df88d
 Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
-Date:   Sun Mar 1 15:38:47 2015 -0500
+Date:   Sun Mar 15 00:00:09 2015 -0500
 
-    MEtodos funcional
+    master
 
-commit fc47e18947b9ef683628957c49499db3b75d1710
+commit f9c3c4b6096512fa6bffd0d3d6bb9458a065c765
 Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
-Date:   Sat Feb 28 19:49:22 2015 -0500
+Date:   Fri Mar 13 23:05:52 2015 -0500
 
-    nuevo mas metodos
+    Administrador0.0.1
 
-commit 3ec25406709d7b8c659b429bb8374356e9883479
+commit ede8929899988715b9cf5a9a5da16502f1117890
 Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
-Date:   Sat Feb 28 19:42:36 2015 -0500
+Date:   Fri Mar 13 20:06:03 2015 -0500
 
-    Con metodos eliminar
+    Administrador
 
-commit 27021bc485fc3da2767cfbfb3a069fa966af3992
+commit 749c98cdc3b1654adf18dd7d83866e18423f8787
 Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
-Date:   Sat Feb 28 19:41:43 2015 -0500
+Date:   Wed Mar 11 01:40:10 2015 -0500
 
-    Con metodos eliminar
+    configuracion
 
-commit c999ba0082c9e692bdc5c1f53196cb96fca39c4a
+commit 3e596ea36db0134de93ca8f0afca79875e3e1c4f
 Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
-Date:   Fri Feb 27 18:25:06 2015 -0500
+Date:   Tue Mar 10 22:26:43 2015 -0500
 
-    Con sockets
+    master
 
-commit dd65bf099e992f147abf1776ae2f6c92c03e7829
+commit 728441b6f4611886f3536a59c152fabb2661a70f
 Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
-Date:   Fri Feb 27 17:51:46 2015 -0500
+Date:   Tue Mar 10 22:17:43 2015 -0500
 
-    Github
+    master
 
-commit 218c44f54adbee980db46ead33319208d5a2c18b
+commit ac30d323eb88615e309a2c3b7be8a7d0871709be
 Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
-Date:   Fri Feb 27 17:41:19 2015 -0500
+Date:   Sun Mar 8 01:08:07 2015 -0500
 
-    Archios Bases en github
+    modificados bd
 
-commit 55fb90515f80900c1b792c5018dee79fcaebcc11
+commit c7066b5941373f98d6244e1e4e6c423cfcdb059a
 Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
-Date:   Thu Feb 26 01:25:41 2015 -0500
+Date:   Wed Mar 4 12:45:28 2015 -0500
 
-    2 Funciona el guardar
+    0.1.0
 
-commit d2484bd18a90343fe9774d6b1aa5f175dd08582c
+commit 75628128e02970cc3df2d367cd59f6623c46ae30
 Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
-Date:   Thu Feb 26 00:11:44 2015 -0500
+Date:   Sun Mar 1 22:59:04 2015 -0500
 
-    1 Archivos bases
+    Con campos completo en la bd
+
+commit c4be9d03fc5732d3c346859d9ba176de2e4ba65b
+Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
+Date:   Sun Mar 1 19:22:23 2015 -0500
+
+    Habilitando CORS
+
+commit 39a88938983fddf01bb15d771431e2ba8e7481e9
+Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
+Date:   Sun Mar 1 16:47:17 2015 -0500
+
+    metodo Actualizar
+
+commit 16deb9b824f7b1445554ec3bebaeb0e2d1e2409c
+Author: Jerson Carranza Lucas <jerson_carranza2@hotmail.com>
+Date:   Sun Mar 1 15:55:19 2015 -0500
+
+    Proyecto Metodos

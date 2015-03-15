@@ -11,15 +11,13 @@ var FileSchema = new Schema({
 		partial_n:String,
 		homework_n:[{
 			description:String,
-			options_n:[{
-				student:String,
-				url:String
-			}],
+			url:String
 		}],
 	}],
 	exam:[{
 		partial_n:String,
-		description:String		
+		description:String,
+		url:String	
 		}],
 	materia:[{
 		partial_n:String,
@@ -27,7 +25,7 @@ var FileSchema = new Schema({
 			description:String,
 			url:String
 		}],
-	}]
+	}] 
 });
 
 FileSchema.set('toJSON',{

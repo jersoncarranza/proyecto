@@ -52,35 +52,36 @@
 			<ul class="list-group">
 				
 				<ul class="list-group group">
-					<li><h3>Title:<input type="text" name="title" placeholder="Tarea, Deber y Proyecto"></h3></li>
-					<li><h3>Student:<input type="text" name="student" placeholder="Anonymous"></h3></li>
-					<li><textarea id="content" type="text" name="content" placeholder="Contenido"></textarea></li>
+					<li><h3>Materia:<input type="text" name="subject" placeholder="Nombre de la Materia"></h3></li>
+					<li><h3>Descripción:<textarea type="text" name="description" placeholder="Descripción"></textarea></h3></li>
+					<li><h3>Profesor:<input type="text" name="teacher" placeholder="Profesor"></h3></li>
+					<li><h3>Semestre:<input type="text" name="level" placeholder="Semestre: 7"></h3></li>
+					<li><h3>Codigo Materia:<input type="text" name="code" placeholder="codigo: EIS9510"></h3></li>
 				</ul>
 				<li class="divider"></li>
 				
-				<ul class="list-group group"><h2>Subject</h2>
-					<li><h3>Name:<input type="text" name="subject.name" placeholder="Base de Conocimiento"></h3></li>	
-					<li><h3>Teacher:<input type="text" name="subject.teacher" placeholder="Teacher"></h3></li>	
-					<li><h3>Code:<input type="text" name="subject.code" placeholder="Subjetc Code: EIS1234"></h3></li>
-					<li><h3>Level:<input type="text" name="subject.level" placeholder="1"></h3></li>
+				<ul class="list-group group"><h2>Deberes</h2>
+					<li><h3>Parcial:<input type="text" name="homework.partial_n" placeholder="1, 2 o 3"></h3></li>	
+					<li><h3>Descripción del deber:<textarea type="text" name="homework.homework_n.description" placeholder="Descripcion"></textarea></h3></li>	
+					<li><h3>url:<input type="text" name="homework.homework_n.url" placeholder="Url"></h3></li>
 				</ul>
 				<li class="divider"></h3></li>
 				
-				<ul class="list-group group">
-					<li><h3>Partial1<input type="text" name="url.url1" placeholder="www.mega.co/redejemplo1"></h3></li>
-					<li><textarea type="text" id="partial1" name="url.description" placeholder="Descripcion del 1er parcial"></textarea></li>
-
-					<li><h3>Partial2<input type="text" name="url.url1" placeholder="www.mega.co/redejemplo2"></h3></li>
-					<li></h3><textarea type="text" id="partial2" name="url.description" placeholder="Descripcion del 2do parcial"></textarea></li>
-					
-					<li><h3>Partial3<input type="text" name="url.url1" placeholder="www.mega.co/redejemplo1" ></h3></li>
-					<li><textarea type="text" id="partial3" name="url.description" placeholder="Descripcion del 3er parcial"></textarea></li>
+				<ul class="list-group group"><h2>Examenes</h2>
+					<li><h3>Parcial:<input type="text" name="exam.partial_n" placeholder="1, 2 o 3"></h3></li>	
+					<li>Desripción<textarea type="text" id="partial3" name="exam.description"></textarea></li>
+					<li><h3>url:<input type="text" name="exam.url" placeholder="www.com"></h3></li>	
 				</ul>
-				<li class="divider"></h3></li>
-				
 
-			<input type="submit" value="guardar">
+				<li class="divider"></h3></li>
+				<ul class="list-group group"><h2>Material</h2>
+					<li><h3>Examenes:<input type="text" name="materia.partial_n" placeholder="1, 2 o 3"></h3></li>	
+
+					<li>Desripción<textarea type="text" id="partial3" name="materia.materia_n.description"></textarea></li>
+					<li><h3>url:<input type="text" name="materia.materia_n.url" placeholder="www.com"></h3></li>	
+				</ul>
 			</ul>
+			<input type="submit" value="guardar">
 	</form>
 </div>
 <div>
