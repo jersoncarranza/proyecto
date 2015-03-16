@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type='text/javascript'>
+        var numero2=0;
+        function sumar()
+            { 
+            numero2 = numero2+1;
+            addFields();
+            }
+
+        function restar()
+            {
+            if(numero2 > 0)
+            {   
+                numero2 = numero2-1;
+               addFields();
+            }
+            else{
+                alert("Negativo no puede ser");
+            }
+
+         }
+
+          function addFields()
+        {
+            // Number of inputs to create
+            var number = numero2;
+            // Container <div> where dynamic content will be placed
+            var container = document.getElementById("container");
+            // Clear previous contents of the container
+            while (container.hasChildNodes()) {
+                container.removeChild(container.lastChild);
+            }
+            for (i=0;i<number;i++){
+                // Append a node with a random text
+                container.appendChild(document.createTextNode("Parcial "+(i+1)));
+               input();
+               button();
+               buttonMenos();
+
+                container.appendChild(document.createElement("br"));
+                document.getElementById(i+1).disabled = true;
+            }
+        }
+
+        function on() {
+            alert ("Hello World!");
+        }
+        function button(){
+             //Create button
+                var button = document.createElement("input");
+                button.type = "button";
+                button.value="+";
+                button.addEventListener("click", on);
+                container.appendChild(button);
+        }
+         function buttonMenos(){
+             //Create button
+                var button = document.createElement("input");
+                button.type = "button";
+                button.value="-";
+                button.addEventListener("click", on);
+                container.appendChild(button);
+        }
+        function input () {
+             // Create an <input> element, set its type and name attributes
+                var input = document.createElement("input");
+                input.type = "text";
+                input.name = "input" + i;
+                input.class = "class" + i;
+                input.value=i+1;
+                input.id =i+1;
+                container.appendChild(input);
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Input text Dinamicamente</h2>
+    
+     <h3>Añadir Parcial</h3>
+    <input name="suma" type="button" onclick="sumar()" value="+" />
+    <input name="suma" type="button" onclick="restar()" value="-" />
+    <br>
+    <div id="container"></div>
+
+</body>
+</html>
