@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <script type='text/javascript'>
-        var numero2=0;
+        var parcial=0;
+        var url=0;
         function sumar()
             { 
-            numero2 = numero2+1;
+            parcial = parcial+1;
             addFields();
             }
 
         function restar()
             {
-            if(numero2 > 0)
+            if(parcial > 0)
             {   
-                numero2 = numero2-1;
+                parcial = parcial-1;
                addFields();
             }
             else{
@@ -26,7 +27,7 @@
           function addFields()
         {
             // Number of inputs to create
-            var number = numero2;
+            var number = parcial;
             // Container <div> where dynamic content will be placed
             var container = document.getElementById("container");
             // Clear previous contents of the container
@@ -41,19 +42,44 @@
                buttonMenos();
 
                 container.appendChild(document.createElement("br"));
+                container.appendChild(document.createElement("br"));
                 document.getElementById(i+1).disabled = true;
             }
         }
 
-        function on() {
-            alert ("Hello World!");
+        function inputon() {
+              // Number of inputs to create
+            var number = url;
+            // Container <div> where dynamic content will be placed
+            var detail = document.getElementById("detail");
+            // Clear previous contents of the detail
+            while (detail.hasChildNodes()) {
+                detail.removeChild(detail.lastChild);
+            }
+            for (i=0;i<number;i++){
+                // Append a node with a random text
+                detail.appendChild(document.createTextNode("Parcial "+(i+1)));
+                 var input = document.createElement("input");
+                input.type = "text";
+                /*input.name = "input" + i;
+                input.class = "class" + i;
+                input.value=i+1;
+                input.id =i+1;*/
+                detail.appendChild(input);
+
+                detail.appendChild(document.createElement("br"));
+                document.getElementById(i+1).disabled = true;
+            }
+        }
+         function inputoff() {
+            alert ("boton !! -");
         }
         function button(){
              //Create button
                 var button = document.createElement("input");
                 button.type = "button";
                 button.value="+";
-                button.addEventListener("click", on);
+                button.addEventListener("click", inputon);
                 container.appendChild(button);
         }
          function buttonMenos(){
@@ -61,7 +87,7 @@
                 var button = document.createElement("input");
                 button.type = "button";
                 button.value="-";
-                button.addEventListener("click", on);
+                button.addEventListener("click", inputoff);
                 container.appendChild(button);
         }
         function input () {
@@ -85,6 +111,9 @@
     <input name="suma" type="button" onclick="restar()" value="-" />
     <br>
     <div id="container"></div>
+    <div id="detail"></div>
+    
+
 
 </body>
 </html>
